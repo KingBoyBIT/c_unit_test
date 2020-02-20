@@ -26,16 +26,14 @@
 #include "app_code.h"
 #include "TestCode.h"
 #include "unity_config.h"
-#include <windows.h>
 
+#include "export.h"
 int main(void)
 {
 	/*注意！在unity中不能使用双斜杠的单行注释作为注释语句*/
 	UnityBegin("test/TestCode.c");
 
-	HINSTANCE dllA;
-	void (*f)() = GetProcAddress(dllA, "HelloWorld");
-	f();
+	export();
 
 	RUN_TEST(unit_test_1, 20);
 
