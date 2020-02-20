@@ -25,10 +25,10 @@ ifeq ($(shell uname -s), Darwin)
 C_COMPILER=clang
 endif
 
-UNITY_ROOT=./unity
+UNITY_ROOT=../unity
 
 CFLAGS =
-CFLAGS += -m32
+# CFLAGS += -m32
 CFLAGS += -std=c89
 CFLAGS += -Wall
 CFLAGS += -Wextra
