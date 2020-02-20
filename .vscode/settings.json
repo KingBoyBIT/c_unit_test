@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "app_code.h": "c",
+        "testcode.h": "c"
+    }
+}
