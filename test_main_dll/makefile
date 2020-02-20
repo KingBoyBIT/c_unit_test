@@ -55,7 +55,7 @@ LINK_FILES= export.dll
 all: clean default
 
 default: $(SRC_FILES1)
-	$(C_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) $(LINK_FILES) -o $(TARGET1)
+	@$(C_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) $(LINK_FILES) -o $(TARGET1)
 	- ./$(TARGET1)
 
 

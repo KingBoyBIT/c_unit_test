@@ -54,7 +54,7 @@ SYMBOLS=
 all: clean default
 
 default: $(SRC_FILES1)
-	$(C_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET1)
+	@$(C_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET1)
 	- ./$(TARGET1)
 
 
