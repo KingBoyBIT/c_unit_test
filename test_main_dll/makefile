@@ -50,7 +50,7 @@ TARGET1 = $(TARGET_BASE1)$(TARGET_EXTENSION)
 SRC_FILES1=$(UNITY_ROOT)/src/unity.c src/app_code.c test/TestCode.c test/test_runners/main.c
 INC_DIRS=-Isrc -I$(UNITY_ROOT)/src -Itest -Idll
 SYMBOLS=
-LINK_FILES= export.dll
+LINK_FILES= dll/export.dll
 
 all: clean default
 
